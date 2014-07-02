@@ -27,8 +27,16 @@ namespace TestApp21014
 			
 			button.Click += delegate {
 				button.Text = string.Format ("{0} clicks!", count++);
+				TestMethodSum();
 			};
 		}
+
+		public void TestMethodSum()
+		{
+			int a = 5, b = 3, c = 0;
+			c = a + b;
+		}
+
 	}
 }
 
